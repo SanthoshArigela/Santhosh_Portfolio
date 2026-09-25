@@ -1227,7 +1227,48 @@
     .to(logo, { scale: 1, duration: 0.14, ease: 'sine.inOut' }, 1.01)
     .to(logo, { scale: 9, opacity: 0, duration: 0.6, ease: 'power2.in' }, 1.25)
     .to(overlay, { opacity: 0, duration: 0.5, ease: 'power2.in' }, 1.35);
-})();
+})(); 
+// (function(){
+//   var overlay = document.getElementById('introOverlay');
+//   var logo = document.getElementById('introLogo');
+//   if(!overlay || !logo) return;
+
+//   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+//   function finishIntro(){
+//     overlay.style.display = 'none';
+//     document.documentElement.style.overflow = '';
+//   }
+
+//   document.documentElement.style.overflow = 'hidden';
+
+//   if(reduceMotion || !window.gsap){
+//     // minimal fade fallback
+//     overlay.style.opacity = '1';
+//     setTimeout(function(){
+//       overlay.style.transition = 'opacity .4s ease';
+//       overlay.style.opacity = '0';
+//       setTimeout(finishIntro, 420);
+//     }, 200);
+//     return;
+//   }
+
+//   // randomized landing origin, kept modest so it reads as premium, not chaotic
+//   var randX = (Math.random() * 220 - 110);
+//   var randY = (Math.random() * 160 - 80);
+//   var randRot = (Math.random() * 24 - 12);
+
+//   gsap.set(logo, { x: randX, y: randY, rotate: randRot, scale: 0.55, opacity: 0 });
+//   gsap.set(overlay, { opacity: 1, display: 'flex' });
+
+//   var tl = gsap.timeline({ onComplete: finishIntro });
+//   tl.to(logo, { opacity: 1, duration: 0.18, ease: 'power1.out' }, 0)
+//     .to(logo, { x: 0, y: 0, rotate: 0, scale: 1, duration: 0.75, ease: 'back.out(1.4)' }, 0.05)
+//     .to(logo, { scale: 1.04, duration: 0.16, ease: 'sine.inOut' }, 0.85)
+//     .to(logo, { scale: 1, duration: 0.14, ease: 'sine.inOut' }, 1.01)
+//     .to(logo, { scale: 9, opacity: 0, duration: 0.6, ease: 'power2.in' }, 1.25)
+//     .to(overlay, { opacity: 0, duration: 0.5, ease: 'power2.in' }, 1.35);
+// })();
 </script>
 
 <!-- NAV -->
@@ -1654,7 +1695,7 @@ ssh http https</pre> -->
         <div class="badge-icon" style="background:var(--pink);">PP</div>
         <h4>Power Platform Fundamentals</h4>
         <div class="org">Microsoft Certified</div>
-        <a href="https://www.credly.com/earner/earned/badge/86d62004-3a05-4cdc-9935-5567320a091f" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;">Verify Certification</a>
+        <a href="https://www.credly.com/badges/86d62004-3a05-4cdc-9935-5567320a091f/public_url" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;">Verify Certification</a>
       </div>
     </div>
   </div>
@@ -1934,7 +1975,7 @@ document.querySelectorAll('[data-contact="github-link"]').forEach(el=>{ el.href 
    Access Key below. Until it's set, submissions fall back to a pre-filled
    mailto so nothing the visitor typed is ever lost or faked as "sent". */
 const FORM_CONFIG = {
-  web3formsAccessKey: "" // <-- paste your Web3Forms Access Key here
+  web3formsAccessKey: "091bf0d1-68ae-442a-a863-f28133c83f21" // <-- paste your Web3Forms Access Key here
 };
 
 (function(){
