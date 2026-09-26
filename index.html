@@ -1845,15 +1845,16 @@ ssh http https</pre> -->
             </div>
 
             <!-- honeypot -->
+            <!-- honeypot -->
             <div
-              style="position:absolute; left:-9999px; opacity:0;"
+              style="position:absolute; left:-9999px; opacity:0; height:0; overflow:hidden;"
               aria-hidden="true"
             >
-              <label for="cf-company">Company</label>
+              <label for="cf-hp-9f2k">Leave this field empty</label>
               <input
                 type="text"
-                id="cf-company"
-                name="company"
+                id="cf-hp-9f2k"
+                name="hp_9f2k"
                 tabindex="-1"
                 autocomplete="off"
               />
@@ -1987,7 +1988,7 @@ const FORM_CONFIG = {
   const mobileEl = document.getElementById('cf-mobile');
   const emailEl = document.getElementById('cf-email');
   const messageEl = document.getElementById('cf-message');
-  const honeypotEl = document.getElementById('cf-company');
+  const honeypotEl = document.getElementById('cf-hp-9f2k');
   let lastSubmitAt = 0;
 
   function validMobile(v){
