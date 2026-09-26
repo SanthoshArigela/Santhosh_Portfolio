@@ -1734,8 +1734,8 @@ ssh http https</pre> -->
     💬 WhatsApp
   </a>
 
-  <a href="mailto:atsssanthosh@gmail.com" data-contact="email-link" class="btn btn-ghost" style="background:var(--white);">
-    ✉️ Email
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atsssanthosh@gmail.com&su=Portfolio%20Contact" data-contact="email-link" target="_blank" rel="noopener" class="btn btn-ghost" style="background:var(--white);"> 
+    📩 Email 
   </a>
 
   <a href="#" data-contact="linkedin-link" target="_blank" rel="noopener" class="btn btn-ghost" style="background:var(--white);">
@@ -1760,9 +1760,9 @@ ssh http https</pre> -->
             <div class="contact-label">WHATSAPP</div>
             <div class="contact-value" data-contact="whatsapp-text">—</div>
           </a>
-          <a class="contact-row" href="mailto:atsssanthosh@gmail.com" data-contact="email-link">
-            <div class="contact-label">EMAIL</div>
-            <div class="contact-value" data-contact="email-text">atsssanthosh@gmail.com</div>
+          <a class="contact-row" href="https://mail.google.com/mail/?view=cm&fs=1&to=atsssanthosh@gmail.com&su=Portfolio%20Contact" data-contact="email-link" target="_blank" rel="noopener">
+             <div class="contact-label">EMAIL</div>
+            <div class="contact-value" data-contact="email-text">—</div>
           </a>
           <a class="contact-row" href="#" data-contact="phone-link">
             <div class="contact-label">MOBILE</div>
@@ -1900,7 +1900,7 @@ ssh http https</pre> -->
         <a href="https://www.linkedin.com/in/santhosharigela/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.instagram.com/santhosh_.arigela/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/teja.arigela.374" target="_blank" rel="noopener">Facebook</a>
-        <a href="mailto:atsssanthosh@gmail.com">Email</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atsssanthosh@gmail.com&su=Portfolio%20Contact" target="_blank" rel="noopener">Email</a>
         <a href="#" data-contact="phone-link">Mobile</a>
         <a href="#" data-contact="whatsapp-link" target="_blank" rel="noopener">WhatsApp</a>
       </div>
@@ -1963,7 +1963,7 @@ function formatPhoneDisplay(e164){
 
 document.querySelectorAll('[data-contact="whatsapp-link"]').forEach(el=>{ el.href = whatsappLink("Hi Santhosh, I came across your portfolio and would like to connect."); });
 document.querySelectorAll('[data-contact="whatsapp-text"]').forEach(el=>{ el.textContent = formatPhoneDisplay(CONTACT.whatsappNumber); });
-document.querySelectorAll('[data-contact="email-link"]').forEach(el=>{ el.href = `mailto:${CONTACT.email}`; });
+document.querySelectorAll('[data-contact="email-link"]').forEach(el=>{ el.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT.email}&su=Portfolio%20Contact`; el.target = '_blank'; el.rel = 'noopener'; });
 document.querySelectorAll('[data-contact="email-text"]').forEach(el=>{ el.textContent = CONTACT.email; });
 document.querySelectorAll('[data-contact="phone-link"]').forEach(el=>{ el.href = `tel:${CONTACT.phone}`; });
 document.querySelectorAll('[data-contact="phone-text"]').forEach(el=>{ el.textContent = formatPhoneDisplay(CONTACT.phone); });
